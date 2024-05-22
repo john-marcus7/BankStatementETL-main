@@ -1,6 +1,9 @@
 .devcontainer
 eStmt/*
 data/csv/*
+data/creditcards/
+data/extratos/
+data/combined_df_final.csv
 .env
 
 # DB files

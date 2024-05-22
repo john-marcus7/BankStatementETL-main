@@ -3,9 +3,9 @@ import sqlite3
 from sqlalchemy import create_engine
 from sqlalchemy.exc import OperationalError
 from loguru import logger
-from langchain.llms.ollama import Ollama
-from langchain_community.chat_models import ChatOpenAI
-from langchain.utilities.sql_database import SQLDatabase
+from langchain_community.llms import Ollama
+from langchain_openai import ChatOpenAI
+from langchain_community.utilities import SQLDatabase
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.runnables import RunnablePassthrough
 from langchain.prompts import PromptTemplate,ChatPromptTemplate
@@ -194,6 +194,11 @@ class ETL_BofA_AI:
                item["dataframe"] = self.__transform_checking_data(item)
             elif item["method"] == "transform_credit_card_data":
                item["dataframe"] = self.__transform_credit_card_data(item)
+            elif item["method"] == "None":
+               item["dataframe"]['category_name'] = item["dataframe"]['description'].apply(self.__get_transaction_category_from_db, context=item["account_name"])
+               item["dataframe"] = item["dataframe"][['date','description','amount','transaction_type','account_name','category_name']]
+               logger.info(f"Dataframe transformed for {item['account_name']}")
+
 
 
     def __get_transaction_category_from_db(self,description,context:str):
@@ -292,8 +297,8 @@ class ETL_BofA_AI:
         logger.info("Saving transactions to db")
         for item in self.df_list:
             df = item["dataframe"]
-            if latest_transaction is not None:
-                df = df[df["date"]>latest_transaction]
+            #if latest_transaction is not None:
+            #    df = df[df["date"]>latest_transaction]
             if len(df) == 0:
                 logger.info(f'No new transactions for {item["account_name"]}')
                 continue

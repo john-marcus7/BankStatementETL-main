@@ -49,6 +49,25 @@
         },
         "account_name_pattern":[
             {
+                "account_name": "combined data",
+                "pattern": "combined_df_final",
+                "method": "None",
+                "categories":[
+                    "TRANSFER",
+                    "RENT",
+                    "SHOPPING",
+                    "PETS",
+                    "TRANSPORTATION",
+                    "UTILITIES",
+                    "FOOD",
+                    "SERVICE",
+                    "SUBSCRIPTION",
+                    "FARMACY",
+                    "ENTERTAINMENT",
+                    "OTHER"
+                ]
+            },
+            {
                 "account_name": "checking",
                 "pattern": "stmt",
                 "skiprows":6,
@@ -60,7 +79,6 @@
                     "SHOPPING",
                     "PETS"
                 ]
-
             },
             {
                 "account_name": "credit - Lucas",

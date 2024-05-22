@@ -1,6 +1,7 @@
 import streamlit as st
 from BankETL import ETL_BofA_AI
 from data_handlers import Transaction
+from data_handlers import initialize_database
 from datetime import datetime, timedelta
 import pandas as pd
 import plotly.express as px
@@ -8,8 +9,9 @@ from dotenv import main
 
 main.load_dotenv()
 
-
 def main():
+    # Initialize the database
+    initialize_database()
     transactions = Transaction()
 
     pg_bg_img = """
@@ -55,13 +57,21 @@ def main():
 
     account_name = st.sidebar.multiselect("Account", transactions.get_accounts(),default=transactions.get_accounts())
 
+
+    # Initialize session state for tracking file upload
+    if 'uploaded_file' not in st.session_state:
+        st.session_state.uploaded_file = None
+
     st.sidebar.markdown("""
                         ---
                         ## Upload new data
                         """)
     with st.sidebar.expander("Add more data here..."):
         uploaded_file = st.file_uploader("Choose a CSV file", type="csv")
-        if uploaded_file is not None:
+        # Check if a file is uploaded and it's different from the previously uploaded file
+        if uploaded_file is not None and uploaded_file != st.session_state.uploaded_file:
+            st.session_state.uploaded_file = uploaded_file
+            # Execute ETL process
             with st.spinner('Loading data...'):
                 result = transactions.execute_etl_in_new_file(uploaded_file)
                 print(result)

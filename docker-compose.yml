@@ -2,6 +2,7 @@ version: '3.4'
 
 volumes:
   ai_finance_config_files:
+
     external: true
 
 services:

@@ -4,12 +4,16 @@ from sqlalchemy import create_engine
 from datetime import datetime
 import pandas as pd
 from sqlalchemy.orm import sessionmaker
-from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import declarative_base
 from sqlalchemy import Column,Integer, Float, String, DateTime
 
 DB_PATH = "data/transactions.sqlite"
     
 Base = declarative_base()
+
+def initialize_database():
+    engine = create_engine(f'sqlite:///{DB_PATH}')
+    Base.metadata.create_all(engine)
 
 class Transaction(Base):
     """
