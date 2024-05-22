@@ -1,0 +1,106 @@
+{
+    "LLM_configs": {
+        "Ollama_LLM": {
+            "model": "mistral:7b",
+            "verbose": false,
+            "temperature": 0.0
+        },
+        "Open_AI_LLM": {
+            "model": "gpt-3.5-turbo-0613",
+            "verbose": false,
+            "temperature": 0.0
+        },
+        "prompt_templates_path": "prompt_templates/",
+        "prompt_templates":{ 
+            "categorization": "categorization.txt",
+            "generate_sql_query": "generate_sql_query.txt",
+            "generate_natural_response": "generate_natural_response.txt"
+        }
+    }, 
+    "ETL_configs": {
+        "selected_llm": "Open_AI_LLM",
+        "text_to_replace":[
+                "POS PURCHASE",
+                "POS WITHDRAWAL",
+                "POS DEBIT",
+                "POS REFUND",
+                "POS RETURN",
+                "POS",
+                "PURCHASE",
+                "WITHDRAWAL",
+                "DEBIT",
+                "REFUND",
+                "RETURN",
+                "CHECK",
+                "ATM",
+                "CREDIT",
+                "ONLINE",
+                "TRANSFER",
+                "PAYMENT",
+                "FOR"
+        ],
+        "data_format": "csv",
+        "data_files_path": "data/csv/",
+        "db_path": "data/transactions.sqlite",
+        "db_scripts_path": "data/sql/",
+        "db_scripts": {
+            "create_tables": "create_tables.sql",
+            "latest_transaction": "latest_transaction.sql"
+        },
+        "account_name_pattern":[
+            {
+                "account_name": "checking",
+                "pattern": "stmt",
+                "skiprows":6,
+                "method": "transform_checking_data",
+                "categories":[
+                    "INCOME",
+                    "TRANSFER",
+                    "RENT",
+                    "SHOPPING",
+                    "PETS"
+                ]
+
+            },
+            {
+                "account_name": "credit - Lucas",
+                "pattern": "_3633",
+                "method": "transform_credit_card_data",
+                "categories": [
+                    "TRANSPORTATION",
+                    "UTILITIES",
+                    "FOOD",
+                    "SHOPPING",
+                    "SERVICE",
+                    "SUBSCRIPTION",
+                    "FARMACY",
+                    "ENTERTAINMENT",
+                    "PETS",
+                    "OTHER"
+                ]
+            },
+            {
+                "account_name":"credit - Leticia",
+                "pattern": "_8697",
+                "method": "transform_credit_card_data",
+                "categories": [
+                        "TRANSPORTATION",
+                        "UTILITIES",
+                        "FOOD",
+                        "SHOPPING",
+                        "SERVICE",
+                        "SUBSCRIPTION",
+                        "FARMACY",
+                        "ENTERTAINMENT",
+                        "PETS",
+                        "OTHER"
+                ]
+            }
+        ],
+        "default_category": "Other",
+        "prompt_templates": {
+            "categorization": "prompt_templates/categorization.txt"
+
+        }
+    }
+}

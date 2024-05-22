@@ -1,0 +1,23 @@
+version: '3.4'
+
+volumes:
+  ai_finance_config_files:
+    external: true
+
+services:
+  aifincance:
+    image: aifincance
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    volumes:
+      - ai_finance_config_files:/config
+    ports:
+      - 8501:8501
+    env_file:
+      - .env
+    restart: unless-stopped
+  
+networks:
+  ai_finance_network:
+    driver: bridge

@@ -1,0 +1,18 @@
+You will be given a list of transactions from your bank account.
+Please categorize the following transactions using the rules below:
+1. Use ONLY the following categories: 
+{categories}
+2. If you are not sure, use the categorie "Other".
+
+
+---
+The transactions are:
+{transactions}
+---
+you must answer using JSON format, with the following format:
+
+{{
+    "transaction_id": "category"
+}}
+
+PLEASE ANSWER USING ONLY THE JSON FORMAT ABOVE.

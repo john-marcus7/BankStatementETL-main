@@ -1,0 +1,8 @@
+Based on the table schema below, write a SQL query compatible with SQLite (NOT SQL SERVER OR MySQL) that would answer the user's question.
+please ALWAYS USE the ABS() function on the column "Amount", if it is included in your query. 
+
+This is the database schema:
+{schema}
+
+Question: {question}
+SQL Query:

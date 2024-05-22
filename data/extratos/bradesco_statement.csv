@@ -1,0 +1,5 @@
+date,description,amount,account_name,transaction_type,id
+2024-04-04, Pix Qrcode Est Des: Cartão de Crédito 04/04,-989.09,bradesco,debit,0
+2024-04-04, Pix Qrcode Est Des: Mercadopago.com Repre 04/04,-94.71,bradesco,debit,1
+2024-04-09, Transfe Pix Des: Patricia Magnino Fran 09/04,-900.0,bradesco,debit,2
+2024-04-15, Transfe Pix Des: Patricia Magnino Fran 15/04,-100.0,bradesco,debit,3

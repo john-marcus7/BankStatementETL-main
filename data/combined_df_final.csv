@@ -1,0 +1,69 @@
+date,description,amount,account_name,transaction_type
+4/12/2024,Localiza,1397.82,azul,credit
+4/13/2024,Ifd*helenne Bistro Com,85.5,azul,credit
+4/20/2024,Amazonprimebr,19.9,azul,credit
+3/30/2024,Anuidade Diferenci03/12,59,azul,credit
+4/11/2024,Pagto Conta Titulos,736.3,azul,credit
+4/11/2024,Pag*firenzze-ct H 01/03,460,azul,credit
+4/11/2024,Juros Pagamento Contas,24.49,azul,credit
+4/12/2024,Uber* Trip,15.01,azul,credit
+4/12/2024,A Obra,409.6,azul,credit
+4/28/2024,Estorno De Anuidade Dif,-29.5,azul,credit
+3/31/2024,Ifd*helenne Bistro Com,194,latam,credit
+3/29/2024,Kizashi Sush-ct R,508.5,latam,credit
+3/30/2024,Itabira Serv-ct  De Ho,473,latam,credit
+3/31/2024,Posto Salmos-ct,50,latam,credit
+4/2/2024,Groomerphill-ct,110,latam,credit
+4/3/2024,Kalunga Cent-ct Hoppin,81.6,latam,credit
+3/24/2024,Azul We*ljgqmjpego,877.9,pao,credit
+3/25/2024,Pag*joaorock,1203.6,pao,credit
+3/30/2024,Ifd*yunes Comercio De,259.94,pao,credit
+3/31/2024,Apple.com/bill,19.9,pao,credit
+3/24/2024,Anuidade Diferenci05/12,54.16,pao,credit
+3/25/2024,D Ville Supe-ct Cados,65.56,pao,credit
+4/5/2024,Estorno Anuidade Difere,-54.16,pao,credit
+4/6/2024,Ifd*miller Moura Martin,79,uniclass,credit
+4/9/2024,Ifd*t  C Comercio De Ch,48.98,uniclass,credit
+4/9/2024,Uber   *uber   *trip,7.96,uniclass,credit
+4/9/2024,Uber   *uber   *trip,11.4,uniclass,credit
+4/11/2024,Ifood  *ifd*carrefour,222.67,uniclass,credit
+4/12/2024,Uber   *uber   *trip,12.93,uniclass,credit
+4/13/2024,Ifd*restaurante Havaian,82.69,uniclass,credit
+4/15/2024,Ifd*dina Restaurante Lt,120.95,uniclass,credit
+4/18/2024,Ifd*carlos Guilherme An,63.8,uniclass,credit
+4/18/2024,Ifd*pumpkin Saudavel Co,87.8,uniclass,credit
+4/19/2024,Ifd*vinicius Silva Agui,108.99,uniclass,credit
+4/20/2024,Ifd*helenne Bistro Come,93.5,uniclass,credit
+4/23/2024,Ifd*nativo Sucos Ltda,64.87,uniclass,credit
+4/2/2024,PIX TRANSF  L A FER02/04,700,itau,debit
+4/2/2024,TAR PACOTE ITAU   MAR/24,79,itau,debit
+4/4/2024,PIX QRS ITAU UNIBAN04/04,2886.33,itau,debit
+4/8/2024,CARTAO TUDOAZUL MC,4299.26,itau,debit
+4/8/2024,DA  ALGAR TELECOM  02123,164.78,itau,debit
+4/8/2024,ITAU MC        PAO DE AC,591.21,itau,debit
+4/8/2024,ITAU MC       4903-9245,4005.17,itau,debit
+4/10/2024,PIX TRANSF  PAULO H10/04,750,itau,debit
+4/10/2024,ITAU VISA     0603-0154,1792.89,itau,debit
+4/12/2024,PIX TRANSF  FORCA T12/04,180,itau,debit
+4/12/2024,PIX TRANSF  VERA LU12/04,650,itau,debit
+4/12/2024,PIX QRS CEMIG DISTR12/04,314.24,itau,debit
+4/15/2024,PIX TRANSF  ART DES14/04,350,itau,debit
+4/18/2024,PIX TRANSF  VICTOR 18/04,520,itau,debit
+4/18/2024,PIX TRANSF  NINA BA18/04,520,itau,debit
+4/19/2024,PIX TRANSF  MAYCON 19/04,600,itau,debit
+4/22/2024,PIX TRANSF KAYC FL20/04,127,itau,debit
+4/22/2024,PIX TRANSF PATRICI20/04,370,itau,debit
+4/22/2024,PIX TRANSF KAYC FL20/04,220,itau,debit
+4/23/2024,PIX TRANSF DANIELA23/04,500,itau,debit
+4/24/2024,PIX TRANSF ETERNO 24/04,45,itau,debit
+4/24/2024,PIX TRANSF PEDRO H24/04,470,itau,debit
+4/10/2024,PAGAMENTO DE BOLETO OUTROS BANCOS  IVAN NEGOCIOS IMOBILIARIO,1941.59,santander,debit
+4/10/2024,PIX ENVIADO                        Patricia Magnino Franco,80,santander,debit
+4/10/2024,PIX ENVIADO                        Patricia Magnino Franco,640,santander,debit
+4/4/2024, Pix Qrcode Est Des: Cartão de Crédito 04/04,989.09,bradesco,debit
+4/4/2024, Pix Qrcode Est Des: Mercadopago.com Repre 04/04,94.71,bradesco,debit
+4/9/2024, Transfe Pix Des: Patricia Magnino Fran 09/04,900,bradesco,debit
+4/15/2024, Transfe Pix Des: Patricia Magnino Fran 15/04,100,bradesco,debit
+4/3/2024,Transferência enviada pelo Pix - Patrícia Magnino Franco - •••.413.986-•• - NU PAGAMENTOS - IP (0260) Agência: 1 Conta: 3628648-1,200,nubank,debit
+4/4/2024,Pagamento de fatura,7523.62,nubank,debit
+4/6/2024,Transferência enviada pelo Pix - CONDOMINIO SAID SANTOS - 26.665.571/0001-39 - CCLA PROD RURAIS TRIÂNGULO Agência: 3224 Conta: 13409-0,40,nubank,debit

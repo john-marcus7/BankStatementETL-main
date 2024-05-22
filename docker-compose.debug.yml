@@ -1,0 +1,26 @@
+version: '3.4'
+
+volumes:
+  ai_finance_config_files:
+    external: true
+
+services:
+  aifincance:
+    image: aifincance
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    command: ["sh", "pip install debugpy -t /tmp && python /tmp/debugpy --wait-for-client --listen 0.0.0.0:5678 streamlit_app.py "]
+    volumes:
+      - ai_finance_config_files:/config
+    ports:
+      - 5678:5678
+      - 8051:8051
+    env_file:
+      - .env
+    networks:
+      - ai_finance_network
+
+networks:
+  ai_finance_network:
+    driver: bridge

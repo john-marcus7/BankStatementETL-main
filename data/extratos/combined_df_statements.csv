@@ -1,0 +1,27 @@
+data,lançamento,valor,origem,tipo
+4/2/2024,PIX TRANSF  L A FER02/04,-700,itau,débito/pix
+4/2/2024,TAR PACOTE ITAU   MAR/24,-79,itau,débito/pix
+4/8/2024,DA  ALGAR TELECOM  02123,-164.78,itau,débito/pix
+4/10/2024,PIX TRANSF  PAULO H10/04,-750,itau,débito/pix
+4/12/2024,PIX TRANSF  FORCA T12/04,-180,itau,débito/pix
+4/12/2024,PIX TRANSF  VERA LU12/04,-650,itau,débito/pix
+4/12/2024,PIX QRS CEMIG DISTR12/04,-314.24,itau,débito/pix
+4/15/2024,PIX TRANSF  ART DES14/04,-350,itau,débito/pix
+4/18/2024,PIX TRANSF  VICTOR 18/04,-520,itau,débito/pix
+4/18/2024,PIX TRANSF  NINA BA18/04,-520,itau,débito/pix
+4/19/2024,PIX TRANSF  MAYCON 19/04,-600,itau,débito/pix
+4/22/2024,PIX TRANSF KAYC FL20/04,-127,itau,débito/pix
+4/22/2024,PIX TRANSF PATRICI20/04,-370,itau,débito/pix
+4/22/2024,PIX TRANSF KAYC FL20/04,-220,itau,débito/pix
+4/23/2024,PIX TRANSF DANIELA23/04,-500,itau,débito/pix
+4/24/2024,PIX TRANSF ETERNO 24/04,-45,itau,débito/pix
+4/24/2024,PIX TRANSF PEDRO H24/04,-470,itau,débito/pix
+4/10/2024,PAGAMENTO DE BOLETO OUTROS BANCOS  IVAN NEGOCIOS IMOBILIARIO,-1941.59,santander,débito/pix
+4/10/2024,PIX ENVIADO                        Patricia Magnino Franco,-80,santander,débito/pix
+4/10/2024,PIX ENVIADO                        Patricia Magnino Franco,-640,santander,débito/pix
+4/4/2024, Pix Qrcode Est Des: Cartão de Crédito 04/04,-989.09,bradesco,débito/pix
+4/4/2024, Pix Qrcode Est Des: Mercadopago.com Repre 04/04,-94.71,bradesco,débito/pix
+4/9/2024, Transfe Pix Des: Patricia Magnino Fran 09/04,-900,bradesco,débito/pix
+4/15/2024, Transfe Pix Des: Patricia Magnino Fran 15/04,-100,bradesco,débito/pix
+4/3/2024,Transferência enviada pelo Pix - Patrícia Magnino Franco - •••.413.986-•• - NU PAGAMENTOS - IP (0260) Agência: 1 Conta: 3628648-1,-200,nubank,débito/pix
+4/6/2024,Transferência enviada pelo Pix - CONDOMINIO SAID SANTOS - 26.665.571/0001-39 - CCLA PROD RURAIS TRIÂNGULO Agência: 3224 Conta: 13409-0,-40,nubank,débito/pix

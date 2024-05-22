@@ -1,0 +1,1 @@
+SELECT MAX(date) as max_date FROM transactions;

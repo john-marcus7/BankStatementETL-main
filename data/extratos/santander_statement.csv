@@ -1,0 +1,4 @@
+date,description,amount,account_name,transaction_type,id
+2024-04-10,PAGAMENTO DE BOLETO OUTROS BANCOS  IVAN NEGOCIOS IMOBILIARIO,-1941.59,santander,debit,0
+2024-04-10,PIX ENVIADO                        Patricia Magnino Franco,-80.0,santander,debit,1
+2024-04-10,PIX ENVIADO                        Patricia Magnino Franco,-640.0,santander,debit,2
